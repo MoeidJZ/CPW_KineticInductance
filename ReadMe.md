@@ -8,8 +8,13 @@ This toolkit bridges the gap between layout design (Qiskit Metal), finite elemen
 2. **CPW Resonance & Impedance GUI (`Resonance_Frequencies_GUI.py`):** A Python Tkinter interface to calculate resonance frequencies, impedance, and equivalent $L_{eq}/C_{eq}$ circuits by factoring in geometry, measurement temperature, and film-specific kinetic inductance.
 3. **HFSS Meshing SOP (`Meshing_CPW_resonators.docx`):** A proven setup guide to ensure eigenvalue convergence in HFSS.
 
-## Important Design Note (Coupling Length)
-> **Note:** The physical lengths detailed in the calculations and simulations *must* include the total coupling length of the resonator alongside the feedline. If you are following our [lab's YouTube tutorials on Qiskit Metal design](https://www.youtube.com/watch?v=9INNvUQs3GM&list=PLGlyoYYcG7gD5o5cx2g5c_EkcxhC6WyG_&index=10), please note this clarification as it was inadvertently omitted in the video.
+## Video Tutorials
+For a full walkthrough on designing these resonators using Qiskit Metal and setting up the HFSS simulations, please refer to our lab's video guides:
+* [Part 1: Designing CPW Resonators in Qiskit Metal](https://www.youtube.com/watch?v=9INNvUQs3GM&list=PLGlyoYYcG7gD5o5cx2g5c_EkcxhC6WyG_&index=10)
+* [Part 2: Simulating CPW Resonators in Ansys HFSS](https://www.youtube.com/watch?v=qX1Hd2kUm18&list=PLGlyoYYcG7gD5o5cx2g5c_EkcxhC6WyG_&index=11)
+
+### Important Design Note (Coupling Length)
+> **Note:** If you are following the video tutorials linked above, please be aware of a small clarification: The physical lengths detailed in the calculations and simulations *must* include the total coupling length of the resonator alongside the feedline. This detail was inadvertently omitted in the videos but is critical for accurate frequency targeting.
 
 ## Using the Python GUI
 The `Resonance_Frequencies_GUI.py` script requires `numpy`, `scipy`, `pandas`, and (optionally) `mpmath` for precise elliptical integral evaluation.
