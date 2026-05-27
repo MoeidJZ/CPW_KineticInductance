@@ -20,7 +20,7 @@ For a full walkthrough on designing these resonators using Qiskit Metal and sett
 The `Resonance_Frequencies_GUI.py` script requires `numpy`, `scipy`, `pandas`, and (optionally) `mpmath` for precise elliptical integral evaluation.
 
 The tool operates in two modes:
-* **Mode 1 (Simulation Data Extraction):** Input your drawn physical lengths and your *simulated* resonance frequencies. **Note: These simulated frequencies must be derived directly from HFSS simulating only the geometric properties, and explicitly do not consider kinetic inductance.** The tool calculates the effective dielectric constant ($\epsilon_{eff}$) and maps out the expected downward frequency shift once the thin-film kinetic inductance is applied.
+* **Mode 1 (Simulation Data Extraction):** Input your drawn physical lengths and your *simulated* resonance frequencies. **Note: These simulated frequencies must be derived directly from HFSS or other simulators simulating only the geometric properties, and explicitly do not consider kinetic inductance.** The tool calculates the effective dielectric constant ($\epsilon_{eff}$) and maps out the expected downward frequency shift once the thin-film kinetic inductance is applied.
 * **Mode 2 (Physical Length Target Generator):** Provide a known $\epsilon_{eff}$ and your **Target Shifted Frequencies** (the frequency you actually want to measure at cryogenic temperatures). The tool will back-calculate the exact physical lengths you need to draw in Qiskit Metal, as well as the simulated target frequencies you should expect to see in your HFSS setup (which inherently lack kinetic inductance).
 
 ### Theory & Equivalent Circuits
