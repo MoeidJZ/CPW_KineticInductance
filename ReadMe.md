@@ -9,7 +9,7 @@ This toolkit bridges the gap between layout design (Qiskit Metal), finite elemen
 3. **HFSS Meshing SOP (`Meshing_CPW_resonators.docx`):** A proven setup guide to ensure eigenvalue convergence in HFSS.
 
 ## Video Tutorials
-For a full walkthrough on designing these resonators using Qiskit Metal and setting up the HFSS simulations, please refer to NYU Nano lab's video guides:
+For a full walkthrough on designing these resonators using Qiskit Metal and setting up the HFSS simulations, please refer to NYU Nanolab's video guides:
 * [Part 1: Designing CPW Resonators in Qiskit Metal](https://www.youtube.com/watch?v=9INNvUQs3GM&list=PLGlyoYYcG7gD5o5cx2g5c_EkcxhC6WyG_&index=10)
 * [Part 2: Simulating CPW Resonators in Ansys HFSS](https://www.youtube.com/watch?v=qX1Hd2kUm18&list=PLGlyoYYcG7gD5o5cx2g5c_EkcxhC6WyG_&index=11)
 
